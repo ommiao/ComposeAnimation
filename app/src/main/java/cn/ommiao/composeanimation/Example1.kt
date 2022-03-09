@@ -3,17 +3,12 @@ package cn.ommiao.composeanimation
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -24,8 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
-import cn.ommiao.composeanimation.data.itemsList
-import cn.ommiao.composeanimation.extension.toColor
+import cn.ommiao.composeanimation.data.LightBlue
 import cn.ommiao.composeanimation.ui.theme.MediumSpace
 import cn.ommiao.composeanimation.widget.TextButton
 import kotlinx.coroutines.delay
@@ -71,7 +65,7 @@ private fun Example1_1() {
             modifier = Modifier
                 .offset(x = animateOffset)
                 .size(boxSize)
-                .background(itemsList[2].color.toColor())
+                .background(LightBlue.color)
         )
     }
 }
@@ -128,7 +122,7 @@ private fun Example1_2() {
             modifier = Modifier
                 .width(animateWidth)
                 .height(boxSize)
-                .background(itemsList[2].color.toColor())
+                .background(LightBlue.color)
         )
     }
 }
