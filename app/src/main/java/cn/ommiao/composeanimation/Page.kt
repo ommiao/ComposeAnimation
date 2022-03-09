@@ -33,16 +33,18 @@ fun Page() {
             val statusBarHeight = with(LocalDensity.current) {
                 insets.statusBars.top.toDp()
             }
-            Scaffold(topBar = {
-                MyAppBar(statusBarHeight)
-            }) {
+            Scaffold(
+                topBar = {
+                    MyAppBar(statusBarHeight)
+                }) {
                 val scrollState = rememberScrollState()
                 Column(
                     modifier = Modifier
                         .padding(it)
                         .verticalScroll(scrollState)
                 ) {
-                    Example1()
+                    Example1("animateDpAsState")
+                    Example2("animateDpAsState chain")
                 }
             }
         }
