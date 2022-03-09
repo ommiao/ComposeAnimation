@@ -45,6 +45,7 @@ fun Page() {
                 ) {
                     Example1("animateDpAsState")
                     Example2("animateDpAsState chain")
+                    Example3(title = "animateColorAsState")
                 }
             }
         }
