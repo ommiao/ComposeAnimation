@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Compose Animation</string>
+    <string name="long_text">The animate*AsState functions are the simplest APIs, that render an instant value change as an animation value.</string>
 </resources>
