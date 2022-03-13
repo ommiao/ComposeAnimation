@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 import cn.ommiao.composeanimation.ui.theme.MediumSpace
 
 @Composable
@@ -16,13 +17,20 @@ fun TextButton(
     text: String,
     topPadding: Dp = MediumSpace,
     bottomPadding: Dp = MediumSpace,
+    startPadding: Dp = 0.dp,
+    endPadding: Dp = 0.dp,
     onClick: (() -> Unit)? = null
 ) {
     Text(
         text = text,
         color = MaterialTheme.colors.primary,
         modifier = Modifier
-            .padding(top = topPadding, bottom = bottomPadding)
+            .padding(
+                top = topPadding,
+                bottom = bottomPadding,
+                start = startPadding,
+                end = endPadding
+            )
             .clickable(
                 indication = null,
                 interactionSource = remember {
