@@ -47,6 +47,7 @@ fun Page() {
                     Example2("animateDpAsState chain")
                     Example3("animateColorAsState")
                     Example4("Crossfade")
+                    Example5("animateContentSize")
                     ExampleX("AnimatedContent")
                 }
             }
