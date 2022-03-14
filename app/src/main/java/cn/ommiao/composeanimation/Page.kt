@@ -3,8 +3,10 @@ package cn.ommiao.composeanimation
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
@@ -18,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 import cn.ommiao.composeanimation.ui.theme.MediumSpace
 import cn.ommiao.composeanimation.ui.theme.OverviewLazyListTheme
 import com.google.accompanist.insets.LocalWindowInsets
@@ -48,7 +51,10 @@ fun Page() {
                     Example3("animateColorAsState")
                     Example4("Crossfade")
                     Example5("animateContentSize")
-                    ExampleX("AnimatedContent")
+                    Example6("AnimatedVisibility")
+                    Example7("AnimatedContent")
+
+                    Spacer(modifier = Modifier.size(100.dp))
                 }
             }
         }

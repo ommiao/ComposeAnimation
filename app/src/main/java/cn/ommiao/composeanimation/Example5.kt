@@ -26,7 +26,7 @@ fun Example5(title: String) {
 }
 
 @Composable
-fun Example5_1() {
+private fun Example5_1() {
     var maxLines by remember {
         mutableStateOf(3)
     }

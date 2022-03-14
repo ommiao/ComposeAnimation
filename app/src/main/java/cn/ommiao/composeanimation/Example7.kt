@@ -10,7 +10,6 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
-import androidx.compose.animation.with
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
@@ -45,21 +44,21 @@ import cn.ommiao.composeanimation.ui.theme.Spacer
 import cn.ommiao.composeanimation.widget.TextButton
 
 @Composable
-fun ExampleX(title: String) {
+fun Example7(title: String) {
     ExampleContainer(title = title) {
-        //example x-1, animated number
-        ExampleX_1()
+        //example 7-1, animated number
+        Example7_1()
 
         MediumSpace.Spacer()
 
-        //example x-2, animated size
-        ExampleX_2()
+        //example 7-2, animated size
+        Example7_2()
     }
 }
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
-private fun ExampleX_1() {
+private fun Example7_1() {
     var count by remember {
         mutableStateOf(0)
     }
@@ -114,7 +113,7 @@ private fun ExampleX_1() {
 
 @OptIn(ExperimentalAnimationApi::class, androidx.compose.material.ExperimentalMaterialApi::class)
 @Composable
-fun ExampleX_2() {
+private fun Example7_2() {
     var expanded by remember { mutableStateOf(false) }
     Row {
         TextButton(text = if (expanded) "Collapse" else "Expand") {
