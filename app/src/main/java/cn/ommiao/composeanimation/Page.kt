@@ -53,6 +53,7 @@ fun Page() {
                     Example5("animateContentSize")
                     Example6("AnimatedVisibility")
                     Example7("AnimatedContent")
+                    ExampleX("Explore: animationSpec")
 
                     Spacer(modifier = Modifier.size(100.dp))
                 }
